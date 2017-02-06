@@ -1,0 +1,20 @@
+
+Creating repo:
+
+1. Go to specific directory:
+	cd /e/morning
+2. Go to parent directory
+	cd ..
+3. Create new repo
+	git init
+
+
+
+Check the current path:
+	pwd  (print working directory)
+
+
+Remove/Delete a repo/dir permanently
+
+1. rm -rf .git
+	rm -rf haha
