@@ -9,12 +9,22 @@ Creating repo:
 	git init
 
 
-
-Check the current path:
-	pwd  (print working directory)
-
-
 Remove/Delete a repo/dir permanently
 
 1. rm -rf .git
 	rm -rf haha
+
+
+Add & Commit: 
+1. git add <fileName>  (<git add .> add all into Stage)
+2. git commit -m"<description>"
+
+
+Unstage / undo :
+git checkout -- <fileName> 
+
+
+
+Check the current path:
+	pwd  (print working directory)
+
