@@ -18,6 +18,8 @@ Remove/Delete a repo/dir permanently
 Add & Commit: 
 1. git add <fileName>  (<git add .> add all into Stage)
 2. git commit -m"<description>"
+Note: When missing 'commit message'. In prompt typing message, ESC, :wq, Enter
+
 
 
 Unstage / undo :
