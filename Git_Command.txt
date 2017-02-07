@@ -25,9 +25,6 @@ Note: When missing 'commit message'. In prompt typing message, ESC, :wq, Enter
 Unstage / undo :
 git checkout -- <fileName> 
 
-Reset current HEAD to specified date:
-git reset --hard
-
 
 
 Check the current path:
