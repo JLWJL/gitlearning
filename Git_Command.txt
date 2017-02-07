@@ -21,18 +21,8 @@ Add & Commit:
 	Note: When missing 'commit message'. In prompt typing message, ESC, :wq, Enter
 
 
-
-Unstage / undo :
+Restore working tree/Update working tree to match version in Index
 	git checkout -- <fileName> 
-
-
-Reset current HEAD to specified date:
-	1. git reset --hard HEAD^ (last version)
-	2. git reset --hard HEAD~2 (go backward 2 versions)
-	3. git reset --hard 23ad2d (specified version)
-	--hard reset Index and Working tree, all changes discard.
-	--soft reset neither, reset status to 'Staged to commit', changes preserved
-	--mixd reset Index, changes in Working tree preserved
 
 
 Show commit details:
@@ -42,6 +32,20 @@ Show commit details:
 	e.g.
 		git show --pretty=oneline 42wq124/HEAD^/HEAD~n
 
+
+Show changes between commits, commit and working tree, etc
+	git diff: changes in working tree not yet staged
+	git diff --cached: changes btwn Index and last commit
+	git diff HEAD: changes btwn working tree and last commit
+
+
+Reset current HEAD to specified date:
+	1. git reset --hard HEAD^ (last version)
+	2. git reset --hard HEAD~2 (go backward 2 versions)
+	3. git reset --hard 23ad2d (specified version)
+	--hard reset Index and Working tree, all changes discard.
+	--soft reset neither, reset status to 'Staged to commit', changes preserved
+	--mixd(default) reset Index, changes in Working tree preserved
 
 
 
