@@ -25,6 +25,7 @@ Note: When missing 'commit message'. In prompt typing message, ESC, :wq, Enter
 Unstage / undo :
 git checkout -- <fileName> 
 
+
 Reset current HEAD to specified date:
 1. git reset --hard HEAD^ (last version)
 2. git reset --hard HEAD~2 (go backward 2 versions)
@@ -33,6 +34,12 @@ Reset current HEAD to specified date:
 --soft reset neither, reset status to 'Staged to commit', changes preserved
 --mixd reset Index, changes in Working tree preserved
 
+
+Edit commit message for specified commit
+1. git revert --edit/-e HEAD^/HEAD~2/559ew12
+2. Type new commit message
+3. ESC to exit input 
+4. :wp to finish
 
 
 Check the current path:
