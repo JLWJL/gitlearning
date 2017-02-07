@@ -26,7 +26,12 @@ Unstage / undo :
 git checkout -- <fileName> 
 
 Reset current HEAD to specified date:
-git reset --hard
+1. git reset --hard HEAD^ (last version)
+2. git reset --hard HEAD~2 (go backward 2 versions)
+3. git reset --hard 23ad2d (specified version)
+--hard reset Index and Working tree, all changes discard.
+--soft reset neither, reset status to 'Staged to commit', changes preserved
+--mixd reset Index, changes in Working tree preserved
 
 
 
