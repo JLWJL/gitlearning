@@ -10,9 +10,13 @@ Creating repo:
 
 
 Remove/Delete a repo/dir permanently
-
 	rm -rf .git
 	rm -rf haha
+
+
+Remove a file:
+	1. rm <filename>
+	2. git rm
 
 
 Add & Commit: 
