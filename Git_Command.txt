@@ -28,7 +28,7 @@ Add & Commit:
 Restore working tree/Update working tree to match version in Index
 	git checkout -- <fileName> 
 
-
+test subl editor for commit message
 Show commit details:
 	git show [options] <objects>
 	objects: blobs, trees, tags and commits
