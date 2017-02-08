@@ -25,10 +25,15 @@ Add & Commit:
 	Note: When missing 'commit message'. In prompt typing message, ESC, :wq, Enter
 
 
-Restore working tree/Update working tree to match version in Index
-	git checkout -- <fileName> 
+Unstage files:
+	git reset HEAD <filename>	
 
-test subl editor for commit message
+
+Discard/Restore working tree changes/Update working tree to match version in Index
+	git checkout -- <fileName> 
+	git checkout -- . (checkout all)
+
+
 Show commit details:
 	git show [options] <objects>
 	objects: blobs, trees, tags and commits
