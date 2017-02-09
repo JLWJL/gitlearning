@@ -24,7 +24,12 @@ Remove a file:
 	2. git rm <filename>
 		//can't delete untracked files, deletion staged for commit
 
+	3. git rm --cached -- <filename>
+		//remove file so it is untracked but EXISTED in work tree
+		git rm --cached -r -- .
+		//remove ALL files so they are untracked but EXISTED in worktree
 
+		
 Add & Commit: 
 	1. git add <fileName>  (<git add .> add all into Stage)
 	2. git commit -m"<description>"
