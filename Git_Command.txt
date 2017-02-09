@@ -1,4 +1,8 @@
 ------------------Local Operation-----------------
+Check the current path:
+	pwd  (print working directory)
+
+
 Creating repo:
 
 	1. Go to specific directory:
@@ -85,7 +89,8 @@ Create branch:
 	git branch <branchname>/git checkout -b <branchname>(create+goto)
 
 View branches:
-	git branch
+	git branch -v: show local branches and last commits info.
+	git branch [-a/--all] [-v]: show all branches [with last commits info]
 
 Switch branch:
 	git checkout <branchname>
@@ -117,7 +122,21 @@ Connect local and remote repo:
 Clone repo from remote repo:
 	git clone <url> (git clone git@github.com:aaa/bbb.git)
 
+View remote repo info:
+	git remote [-v]
 
-Check the current path:
-	pwd  (print working directory)
+Push:
+	git push <remotebranch> <localbranch>
+
+Fetch:
+	git fetch <remoterbranch>: download but not automatically try to merge
+
+Pull: 
+	git pull
+	git branch --set-upstream-to=origin/<branch>: connect local branch with remote 			branch so that you can pull information
+
+
+>>>>>>> Stashed changes
+
+
 
