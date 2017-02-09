@@ -38,12 +38,13 @@ Discard/Restore working tree changes/Update working tree to match version in Ind
 	git checkout -- . (checkout all)
 
 
-Show commit details:
+Show details:
 	git show [options] <objects>
 	objects: blobs, trees, tags and commits
 	options: --pretty=oneline, short, medium, full ...
 	e.g.
 		git show --pretty=oneline 42wq124/HEAD^/HEAD~n
+		git show --pretty=oneline <tagname>
 
 
 Show changes between commits, commit and working tree, etc
@@ -100,7 +101,7 @@ Merge branch:
 	git merge --no-f -m"" : no fast-forward merge
 
 Delete branch:
-	git branch -d <branchname>
+	git branch -d <branchname1,branchname2>
 	git branch -D <branchname>: delete a unmerged branch
 
 Stash: store current modification in hidden place & restore a clean worktree as the latest commit
@@ -112,6 +113,28 @@ Stash: store current modification in hidden place & restore a clean worktree as 
 	git stash apply [stash]: Apply a stash but don't remove it from stash list
 	git stash drop [stash]: Drop a stash from stash list
 	git stash branch <branchname> [stash]: create a new branch where the stored 			stash applied and drop stash from stash list
+
+
+>>>>>>>>>>>>>>>>>>>Tagging<<<<<<<<<<<<<<<<<<<<<<
+Create lightweight tag:
+	git tag <tagname>
+
+Create annotated tag:
+	git tag -a <tagname> -m"message"
+
+List tags:
+	git tag
+	git tag -1 "tag format": View particular patterned tags: git tag -1 "v1.3*"
+
+Show tags info:
+	git show <tagname>
+
+Tagging later:
+	git tag [-a] <tagname> <commit>
+
+Delete local tags:
+	git tag -d <tagname>
+
 
 ------------Remote Operation---------------
 Connect local and remote repo:
@@ -126,16 +149,27 @@ Clone repo from remote repo:
 View remote repo info:
 	git remote [-v]
 
-Push:
-	git push <remotebranch> <localbranch>
+Push branches:
+	git push <remotebranch> <localbranch>: git push origin dev
 
-Fetch:
+Fetch branches:
 
 	git fetch <remoterbranch>: download but not automatically try to merge
 
-Pull: 
+Pull branches: 
 	git pull
 	git branch --set-upstream-to=origin/<branch>: connect local branch with remote 			branch so that you can pull information
 
+
 Delete branch on remote:
 	git push origin --delete <branchname>
+	git branch -dr origin/<branchname>
+
+
+Push tags to remote:
+	git push origin <tagname>: push 1 tag
+	git push origin --tags: push all unpushed tags
+
+Delete tags on remote:
+	git push origin :refs/tags/<tagname>
+
