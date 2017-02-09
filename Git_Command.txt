@@ -133,12 +133,9 @@ Fetch:
 
 	git fetch <remoterbranch>: download but not automatically try to merge
 
-
 Pull: 
 	git pull
 	git branch --set-upstream-to=origin/<branch>: connect local branch with remote 			branch so that you can pull information
 
-
-
-
-
+Delete branch on remote:
+	git push origin --delete <branchname>
