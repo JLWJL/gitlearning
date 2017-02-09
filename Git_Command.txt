@@ -97,7 +97,15 @@ Merge branch:
 Delete branch:
 	git branch -d <branchname>
 
-
+Stash: store current modification in hidden place & restore a clean worktree as the latest commit
+	git stash: create a stash
+	git stash save [message]: create a stash with description
+	git stash list: show all stash list
+	git stash show [-p] [stash]: show changes btwn stash and its original status
+	git stash pop [stash]: Apply a stash and remove it from stash list
+	git stash apply [stash]: Apply a stash but don't remove it from stash list
+	git stash drop [stash]: Drop a stash from stash list
+	git stash branch <branchname> [stash]: create a new branch where the stored 			stash applied and drop stash from stash list
 
 ------------Remote Operation---------------
 Connect local and remote repo:
