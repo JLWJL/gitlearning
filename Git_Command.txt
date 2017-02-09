@@ -19,7 +19,7 @@ Remove/Delete a repo/dir permanently
 
 
 Remove a file:
-	1. rm <filename> //change in working tree
+	1. rm <filename> //delete in working tree, can't see it
 	2. git rm <filename>//stage the deletion
 
 
@@ -30,7 +30,7 @@ Add & Commit:
 
 
 Unstage files:
-	git reset HEAD <filename>	
+	git reset HEAD [<filename>]
 
 
 Discard/Restore working tree changes/Update working tree to match version in Index
