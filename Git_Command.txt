@@ -1,4 +1,9 @@
 ------------------Local Operation-----------------
+
+Check the current path:
+	pwd  (print working directory)
+
+
 Creating repo:
 
 	1. Go to specific directory:
@@ -82,7 +87,7 @@ Master usually is used to release the new version, don't operate on it.
 Team members are working on own branch of the main branch, merge changes to main branch, then merge into master finally.
 
 Create branch:
-	git branch <branchname>/git checkout -b <branchname>(create+goto)
+	git branch <branchname>/git checkout -b <branchname> origin/<branchname>:create a local branch that connects with a remote branch
 
 View branches:
 	git branch
@@ -96,6 +101,7 @@ Merge branch:
 
 Delete branch:
 	git branch -d <branchname>
+	git branch -D <branchname>: delete a unmerged branch
 
 Stash: store current modification in hidden place & restore a clean worktree as the latest commit
 	git stash: create a stash
@@ -109,15 +115,27 @@ Stash: store current modification in hidden place & restore a clean worktree as 
 
 ------------Remote Operation---------------
 Connect local and remote repo:
-	1. Enter local repo path
-	2. git remote add <shortname> <url> (can b done with multi remote repo)
-	3. 'git push -u <shortname> <branch name>' to finish first push to remote repo
+	1. Get in local repo path
+	2. git remote add <remoteRepoName> <url> (can b done with multi remote repo)
+	3. 'git push -u <remoteRepoName> <local branch>' to finish first push to remote 	repo
 	4. 'git remote -v' to view all connected remote repo
 
 Clone repo from remote repo:
 	git clone <url> (git clone git@github.com:aaa/bbb.git)
 
+View remote repo info:
+	git remote [-v]
 
-Check the current path:
-	pwd  (print working directory)
+Push:
+	git push <remotebranch> <localbranch>
+
+Fetch:
+	git fetch: to be explained.....
+
+Pull: 
+	git pull
+	git branch --set-upstream-to=origin/<branch>: connect local branch with remote 			branch so that you can pull information
+
+
+
 
