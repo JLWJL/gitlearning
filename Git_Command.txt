@@ -1,5 +1,4 @@
 ------------------Local Operation-----------------
-
 Check the current path:
 	pwd  (print working directory)
 
@@ -90,7 +89,8 @@ Create branch:
 	git branch <branchname>/git checkout -b <branchname> origin/<branchname>:create a local branch that connects with a remote branch
 
 View branches:
-	git branch
+	git branch -v: show local branches and last commits info.
+	git branch [-a/--all] [-v]: show all branches [with last commits info]
 
 Switch branch:
 	git checkout <branchname>
@@ -130,11 +130,14 @@ Push:
 	git push <remotebranch> <localbranch>
 
 Fetch:
-	git fetch: to be explained.....
+
+	git fetch <remoterbranch>: download but not automatically try to merge
+
 
 Pull: 
 	git pull
 	git branch --set-upstream-to=origin/<branch>: connect local branch with remote 			branch so that you can pull information
+
 
 
 
