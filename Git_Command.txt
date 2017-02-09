@@ -19,8 +19,10 @@ Remove/Delete a repo/dir permanently
 
 
 Remove a file:
-	1. rm <filename> //delete in working tree, can't see it
-	2. git rm <filename>//see deletion staged for commit
+	1. rm <filename> 
+		//delete tracked/untracked files in working tree, can't see it; for tracked files, deletion staged to be commited
+	2. git rm <filename>
+		//can't delete untracked files, deletion staged for commit
 
 
 Add & Commit: 
