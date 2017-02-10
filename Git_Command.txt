@@ -80,7 +80,9 @@ Edit commit message for last commit
 	4. :wp to finish
 
 
-Write 
+Set your own editor: 
+	git config --global core.editor "'G:/Sublime/Sublime Text 3/sublime_text.exe' -wait"
+
 
 >>>>>>>>>>>>>>Branch Management<<<<<<<<<<<<<
 ________________________________
