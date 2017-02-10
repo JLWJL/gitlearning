@@ -7,10 +7,14 @@ Creating repo:
 
 	1. Go to specific directory:
 		cd /e/morning
-	2. Go to parent directory
-		cd ..
+	2. Make a directory
+		mkdir study (e/morning/study)
+
 	3. Create new repo
 		git init
+	
+	Go to parent directory
+		cd ..
 
 
 Remove/Delete a repo/dir permanently
@@ -29,7 +33,7 @@ Remove a file:
 		git rm --cached -r -- .
 		//remove ALL files so they are untracked but EXISTED in worktree
 
-		
+
 Add & Commit: 
 	1. git add <fileName>  (<git add .> add all into Stage)
 	2. git commit -m"<description>"
@@ -75,6 +79,8 @@ Edit commit message for last commit
 	3. ESC to exit input 
 	4. :wp to finish
 
+
+Write 
 
 >>>>>>>>>>>>>>Branch Management<<<<<<<<<<<<<
 ________________________________
