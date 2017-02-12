@@ -4,6 +4,8 @@ Check the current path:
 pull --rebase vs normal pull
 pull --rebase vs normal pull
 pull --rebase vs normal pull
+pull --rebase vs normal pull:for normal pull on local repo
+
 
 Creating repo:
 
