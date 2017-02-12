@@ -1,7 +1,7 @@
 ------------------Local Operation-----------------
 Check the current path:
 	pwd  (print working directory)
-
+pull --rebase vs normal pull
 
 Creating repo:
 
